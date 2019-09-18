@@ -1,0 +1,180 @@
+@bgc_white: #fff;
+@bgc_cyan: #95e1d3;
+@bgc_grey: #f8f8f8;
+
+@color_shadow: #95e1d3;
+
+.bgc_white{
+	background-color: @bgc_white;
+}
+.bgc_cyan{
+	background-color: @bgc_cyan;
+}
+.bgc_grey{
+	background-color: @bgc_grey;
+}
+
+.bgi_1{
+	background-image: url(../images/image_1.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+.bgi_2{
+	background-image: url(../images/image_2.png);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	position: relative;
+	margin-top: -28px;
+	&:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		height: 64px;
+		// background-image: url(../images/image_2_before.png);
+		background-repeat: no-repeat;
+		background-position: center 0;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		height: 61px;
+		// background-image: url(../images/image_2_after.png);
+		background-repeat: no-repeat;
+		background-position: center 0;
+	}
+}
+.bgi_3{
+	// height: 530px;
+	// background: url(../images/image_3.png) 10px 0 no-repeat , url(../images/image_4.png) #fff right 0 no-repeat;
+	// background-color: #fff;
+	margin-top: -30px;
+}
+.bgi_4{
+	background-image: url(../images/image_5.png);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	margin-top: -30px;
+}
+.bgi_5{
+	position: relative;
+	margin-top: -50px;
+}
+.bgi_6{
+	background-image: url(../images/image_6.png);
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 20px;
+		.translate(0,-100%);
+		background-image: url(../images/image_6_before.png);
+		background-repeat: no-repeat;
+		background-position: center 0;
+	}
+}
+
+.Kaushan(@font-size:16px, @color:#333333){
+	font-family: 'Kaushan Script';
+	font-size: @font-size;
+	color: @color;
+}
+.Montserrat(@font-weight:normal, @font-size:16px, @color:#333){
+	font-family: 'Montserrat';
+	font-weight: @font-weight;
+	font-size: @font-size;
+	color: @color;
+}
+.Roboto(@font-size:16px, @color:#999){
+	font-family: 'Roboto';
+	font-size: @font-size;
+	color: @color;
+}
+.Roboto-I(@font-size:16px, @color:#999){
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-style: italic;
+	font-size: @font-size;
+	color: @color;
+}
+.font(@font-name:'Intro', @font-weight:normal, @font-size:15px, @color:#000){
+	font-family: @font-name;
+	font-weight: @font-weight;
+	font-size: @font-size;
+	color: @color;
+}
+
+.flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex_no_wrap{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.translate(@x:0, @y:0){
+	-moz-transform:translate(@x, @y);
+	-webkit-transform:translate(@x, @y);
+	transform:translate(@x, @y);
+}
+.transition(@style:all, @time:0.3s, @anim:ease-in-out){
+	-moz-transition:@style @time @anim;
+	-webkit-transition:@style @time @anim;
+	transition:@style @time @anim;
+}
+.rotate(@deg){
+	-moz-transform:rotate(@deg);
+	-webkit-transform:rotate(@deg);
+	transform:rotate(@deg);
+}
+.base_gradiend{
+	background: rgba(243,129,129,1);
+	background: -moz-linear-gradient(top, rgba(243,129,129,1) 0%, rgba(252,227,138,0.9) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,129,129,1)), color-stop(100%, rgba(252,227,138,0.9)));
+	background: -webkit-linear-gradient(top, rgba(243,129,129,1) 0%, rgba(252,227,138,0.9) 100%);
+	background: -o-linear-gradient(top, rgba(243,129,129,1) 0%, rgba(252,227,138,0.9) 100%);
+	background: -ms-linear-gradient(top, rgba(243,129,129,1) 0%, rgba(252,227,138,0.9) 100%);
+	background: linear-gradient(to bottom, rgba(243,129,129,1) 0%, rgba(252,227,138,0.9) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38181', endColorstr='#fce38a', GradientType=0 );
+}
+.box-shadow(@params){
+	-moz-box-shadow:@params;
+	-webkit-box-shadow:@params;
+	box-shadow:@params;
+}
+@keyframes progress{
+	0%   { right: 100%; }
+	100% { right: 0; }
+}
+
+
+
+@base_font: Arial;
+@base_font_size: 15px;
+
+.text_center{
+	text-align: center;
+}
+.scale(@index){
+	-moz-transform:scale(@index);
+	-webkit-transform:scale(@index);
+	transform:scale(@index);
+}
+.btn_block{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+}

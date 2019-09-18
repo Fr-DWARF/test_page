@@ -1,0 +1,89 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (max-width : 1200px) {
+	
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 992px) {
+	.wrapper{
+		max-width: 960px;
+	}
+	.content .content_center{
+		max-width: 960px;
+		padding: 0;
+		order: 1;
+	}
+	.content .sidebar{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.content .left{
+		order: 2;
+	}
+	.content .right{
+		order: 3;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 768px) {
+	.wrapper{
+		max-width: 735px;
+	}
+	.content .content_center{
+		max-width: 735px;
+	}
+	.content .content_center .content_center_block_2 .col_2x{
+		width: 100%;
+	}
+	.content .content_center .content_center_block_3 .col_3x{
+		width: 50%;
+	}
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px) {
+	.wrapper{
+		max-width: 570px;
+	}
+	.content .content_center{
+		max-width: 570px;
+	}
+	header{
+		justify-content: center;
+	}
+	header .logo{
+		margin-bottom: 20px;
+	}
+	.content .content_center .content_center_block_3 .col_3x{
+		width: 100%;
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+
+
+@media only screen and (min-width : 768px) {
+}
+
+
+
+/*Fix colulmns if height: auto*/
+/*@media only screen and  (min-width : 1200px) {
+}
+
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+}
+
+@media only screen and (max-width : 992px) and (min-width : 768px) {
+}*/

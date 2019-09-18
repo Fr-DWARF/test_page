@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro/Intro-Regular.eot');
+    src: url(../fonts/Intro/'Intro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Intro/Intro-Regular.woff2') format('woff2'),
+        url('../fonts/Intro/Intro-Regular.woff') format('woff'),
+        url('../fonts/Intro/Intro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro/Intro-Bold.eot');
+    src: url('../fonts/Intro/Intro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Intro/Intro-Bold.woff2') format('woff2'),
+        url('../fonts/Intro/Intro-Bold.woff') format('woff'),
+        url('../fonts/Intro/Intro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/OpenSans.eot');
+    src: url('../fonts/OpenSans/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans/OpenSans.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('../fonts/PTSerif/PTSerif-Regular.eot');
+    src: url('../fonts/PTSerif/PTSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTSerif/PTSerif-Regular.woff2') format('woff2'),
+        url('../fonts/PTSerif/PTSerif-Regular.woff') format('woff'),
+        url('../fonts/PTSerif/PTSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
